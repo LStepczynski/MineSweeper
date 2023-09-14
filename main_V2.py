@@ -5,11 +5,11 @@ import time
 pg.mixer.init(44100, -16,2,2048)
 
 # CONSTANTS
-MAP_SIZE = 10
+MAP_SIZE = 15
 TILE_SIZE = 50
 WIDTH, HEIGHT = TILE_SIZE*MAP_SIZE, TILE_SIZE*MAP_SIZE
 FPS = 30
-NUM_OF_MINES = 10
+NUM_OF_MINES = 30
 # CONSTANTS
 
 # COLORS
@@ -41,7 +41,7 @@ FLAG_SOUND = pg.mixer.Sound('flag.mp3')
 
 
 WINDOW = pg.display.set_mode((WIDTH,HEIGHT))
-pg.display.set_caption("Saper")
+pg.display.set_caption("Minesweeper")
 
 class Box:
     def __init__(self, xpos, ypos, color, armed, detected = False, width = TILE_SIZE, height = TILE_SIZE):

@@ -1,0 +1,4 @@
+A game of Minesweeper where the goal is to discover all the boxes while avoiding
+and marking mines.
+
+By LStepczynski
